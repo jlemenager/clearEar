@@ -16,6 +16,7 @@ The band is below the navbar and the sliding volume changer (BONUS) for Human Ea
 Check out the wireframe below for a better understanding:
 
 ![](wireframe.png)
+
 ## My First Steps:
 I will begin the project by using sounds I make on Garageband and downloading them into my project folder
 I will use a for loop and constructor function to play a random sound of the 12 notes when I hit the button and it will also display a random color within the band (a div) below 
