@@ -28,8 +28,7 @@ I will set up a more detailed wireframe and start implementing it
 
 ## Links to my Work
 
-Current Trello Project Schedule: https://trello.com/b/enJ4lJfU/clearear-project
-Wireframe in this folder
+Current Trello Project Schedule: https://trello.com/b/enJ4lJfU/clearear-project and wireframe in this folder
 
 ## Credits 
 
