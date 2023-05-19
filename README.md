@@ -9,7 +9,7 @@ There are two modes to clearEar:
     iii. Hard: where you can see the scale degrees of the notes but you can't hear the tonic in the background (no background color)
     iv. Expert: where you can only hear the notes (just changes color like mode 1 for each note played: no scale degree lines)
 
-![(https://images.unsplash.com/photo-1512733596533-7b00ccf8ebaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80)]
+![piano-image](https://images.unsplash.com/photo-1512733596533-7b00ccf8ebaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80)
 
 ## Page Structure
 There is a navigation bar at the top of clearEar that slides between different instruments when you hover over it. When you choose one to play, it populates on the top-left of the screen. Below the navbar are buttons for different game modes for that instrument as well as two sliders to adjust the volume for all modes and the background key volume for mode 2
