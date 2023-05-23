@@ -6,17 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit 1 Project</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="tone.js"></script>
+    
 </head>
 <body>
     <header>
-        <h1>clearEar</h1>
-        <button>Play Sound</button>
-        <input type="text" value="" placeholder="Guess the Key...">
+        <h1>CLEAR</h1>
+        <img src="clear (1).png" alt="logo-ear" id="logo-ear">
     </header>
-    <div id="color-display">
 
+    <div id="search-div">
+        <h1 id="game-modes-title">Game Modes</h1>
+        <div class="flexbox">
+        <div id="game-modes">
+        <div id="human-ears" class="game-mode"><h3>Human Ears</h3><p id="human-ears-paragraph">Guess each note as it is played.</p></div>
+        <div id="bushbaby-ears" class="game-mode"><div><h3>Bushbaby Ears</h3><p id="note">Hit Reset before playing</p></div><p id="bushbaby-ears-paragraph">Guess the key of the notes (the tonic is played as the last note).</p></div>
+        <div id="elephant-ears" class="game-mode"><div><h3>Elephant Ears</h3><p id="note">Hit Reset before playing</p></div><p id="elephant-ears-paragraph">Guess the key of the notes.</p></div>
+        </div>
+        <div id="vert-column"></div>
+        <div id="check">
+        <div id="check-display">
+        <h2 id="display-note">Placeholder</h2>
+        <h2 id="display-result">Placeholder</h2>
+        </div>
+        <input type="text" value="" placeholder="Guess the Note...">
+        <button id="check-button">Guess</button>
+        </div>
+        </div>
     </div>
-    
+    <div id="top-v-column-cover"></div>
+    <div id="bottom-v-column-cover"></div>
+    <div id="horiz-row"></div>
+
+    <section>
+    <button id="play-sound">Play Note</button>
+    <button id="stop-sound">Stop Playing</button>
+    <button id="reset">Reset</button>
+        <div id="color-display"></div>
+        <div id="scale-colors">
+        <div class="scale-color five"></div>
+        <div class="scale-color four"></div>
+        <div class="scale-color three"></div>
+        <div class="scale-color two"></div>
+        <div class="scale-color one"></div>
+        </div>
+    </section>
+
+    <script src="http://unpkg.com/tone"></script>
+    <script type="module" src="tone.js"></script>
 </body>
 </html>

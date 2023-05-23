@@ -1,0 +1,326 @@
+body {
+    background-image: url('simon-berger-JH_R66BihvA-unsplash.jpg');
+    background-size: cover;
+    color: #835C3E;
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+header{
+    background-color: #835C3E;
+    box-shadow: 5px 5px 40px black;
+    display: fixed;
+    padding:10px 0 0 0;
+    margin: 0;
+}
+
+h1{
+    display: inline-block;
+    font-size: 40px;
+    margin:0 0 0 70px;
+    padding: 0;
+    color:#AD825D;
+    position: relative;
+    bottom:15px;
+}
+
+@keyframes grow {
+    0% {transform:scale(1);}
+    50% {transform:scale(0.60);}
+    100% {transform:scale(1);}
+}
+
+#logo-ear{
+    height:60px;
+    margin:0;
+    padding: 0;
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-delay:1s;
+    animation-iteration-count: infinite;
+}
+
+#search-div {
+    background-image: url('nathan-dumlao-J2gEgTPM_OA-unsplash.jpg');
+    z-index: 2;
+    margin: 0;
+    padding:0 70px 0;
+}
+
+.flexbox{
+    display:grid;
+    grid-template-columns: 70% 10% 20%;
+}
+
+#game-modes-title {
+    margin:0;
+    font-size: 25px;
+    padding:40px 0 10px 0;
+}
+
+#game-modes {
+    grid-column-start:1;
+    grid-column-end:2;
+    display:flex;
+    flex-direction:flex-start;
+}
+
+.game-mode{
+    background-color: #835C3E;
+    color: #AD825D;
+    box-shadow: 1px 1px 30px black;
+    width:230px;
+    height:110px;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-evenly;
+    margin-right:40px;
+    border-radius: 5%;
+    padding-bottom:10px;
+}
+
+.game-mode:hover{
+    width:280px;
+    transition: all 1.2s ease;
+    /*https://stackoverflow.com/questions/41267357/css-ease-in-and-out-on-hover*/
+}
+
+.game-mode:not(:hover){
+    width:230px;
+    transition: all 1.2s ease;
+    /*https://stackoverflow.com/questions/10995165/what-is-the-opposite-of-hover-on-mouse-leave*/
+}
+h3{
+    margin: 12px 15px 0;
+    color:black;
+    opacity:.6;
+}
+
+p{
+    font-size:12px;
+    margin:14px 10px 10px 0;
+}
+
+#note {
+    margin:14px 10px 20px 15px;
+    padding:5px;
+    background-color:black;
+    opacity:.6;
+    border-radius:4%;
+    color:#835C3E;
+    font-size:11px;
+    font-weight:500;
+}
+
+button{
+    color: #835C3E;
+    background-color: #AD825D;
+    border:2px solid #835C3E;
+    height:40px;
+    width:120px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border-radius: 8%;
+    margin:0;
+}
+
+button:hover{
+    color:#E3C0AD;
+    background-color: #835C3E;
+}
+
+#top-v-column-cover{
+    position:absolute;
+    right:23vw;
+    top:9px;
+    width:200px;
+    height:70px;
+    background-color: #835C3E;
+    z-index: 4;
+    
+}
+#bottom-v-column-cover{
+    position:absolute;
+    right:23vw;
+    top:300px;
+    width:200px;
+    height:30px;
+    background-color: #835C3E;
+    z-index: 4;
+    margin: 0;
+}
+
+#vert-column{
+    grid-column-start:2;
+    grid-column-end:3;
+    position:absolute;
+    right:30vw;
+    top:70px;
+    height:250px;
+    width:30px;
+    background-color: #835C3E;
+    z-index: 3;
+    box-shadow: 5px 5px 40px black;
+    margin: 0;
+}
+
+#check{
+    grid-column-start:3;
+    grid-column-end:4;
+    position:relative;
+    bottom:50px;
+    right:15px;
+}
+
+#display-result, #display-note{
+    opacity: 0;
+    margin:0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 3px #E3C0AD;
+}
+
+input {
+    width:240px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #835C3E;
+    color: #AD825D;
+    font-size: 1.1rem;
+    border-radius:4%;
+}
+
+input::placeholder{
+    color:#AD825D;
+    font-size: 1.1rem;
+}
+#check-button{
+display: flex;
+justify-content: center;
+align-items: center;
+margin:10px 0 0 0;
+position: relative;
+left:65px;
+}
+
+#horiz-row{
+    width:100vw;
+    height:30px;
+    background-color: #835C3E;
+    position:absolute;
+    top:300px;
+    box-shadow: 5px 5px 40px black;
+    z-index: 2;
+    margin: 0;
+}
+
+section {
+    background-color: #835C3E;
+    opacity: .8;
+    margin:0;
+    padding:20px 0 200px 0;
+}
+
+#play-sound{
+    color: #AD825D;
+    background-color: #835C3E;
+    border:2px solid #AD825D;
+    margin:30px 0 0 72px;
+    display: none;
+}
+
+#stop-sound {
+    color: #AD825D;
+    background-color: #835C3E;
+    border:2px solid #AD825D;
+    margin:30px 0 0 15px;
+    display:none;
+}
+
+#reset {
+    color: #AD825D;
+    background-color: #835C3E;
+    border:2px solid #AD825D;
+    margin:30px 0 0 15px;
+    display:none;
+}
+
+#color-display {
+    margin:40px auto 0;
+    height:400px;
+    width:400px;
+    border-radius: 100%;
+    filter:blur(100px);
+    /*https://stackoverflow.com/questions/11977103/blur-effect-on-a-div-element*/
+    z-index: 0;
+}
+
+#scale-colors{
+    display:none;
+    margin-top:15px;
+}
+
+.scale-color{
+    height:45px;
+    width:45px;
+    border-radius:100%;
+    filter:blur(12px);
+    background-color: blue;
+    margin-left:-60px;
+    margin-top:10px;
+}
+
+@keyframes slide {
+    0% {margin-left:-10px;}
+    100% {margin-left:100%}
+}
+
+.five{
+    animation-duration:3s;
+    animation-iteration-count: initial;
+}
+
+.four{
+    animation-duration:3s;
+    animation-delay:1s;
+    animation-iteration-count: initial;
+}
+
+.three{
+    animation-duration:3s;
+    animation-delay:2s;
+    animation-iteration-count: initial;
+}
+
+.two{
+    animation-duration:3s;
+    animation-delay:3s;
+    animation-iteration-count: initial;
+}
+
+.one{
+    animation-duration:3s;
+    animation-delay:4s;
+    animation-iteration-count: initial;
+}
+
+hr {
+    /*opacity:1;
+    color:black;
+    position: absolute;
+    margin-top:2000px;
+    margin-bottom: 100px;
+    width:20px;
+    height:20px;
+    */
+    width:100%;
+    border-width: 2px;
+    border-style:none;
+    border-color:black;
+}
