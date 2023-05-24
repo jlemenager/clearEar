@@ -75,6 +75,7 @@ const humanEarFunction = () =>{
 }
 const playBushBabyEar = async () => {
     await Tone.start()
+    synth.sync()
     let randomKey = Math.round(Math.random()*11)
     displayNote.innerText = key[randomKey][0]
     synth.triggerAttackRelease(key[randomKey][0], '4n', now)
@@ -84,10 +85,14 @@ const playBushBabyEar = async () => {
     synth.triggerAttackRelease(key[randomKey][Math.round(Math.random()*6)], '4n', now+4)
     synth.triggerAttackRelease(key[randomKey][Math.round(Math.random()*6)], '4n', now+5)
     synth.triggerAttackRelease(key[randomKey][0], '4n', now+6)
+    Tone.Transport.start()
+    //Shoutout to Tylus
 }
+
 
 const playElephantEar = async () => {
     await Tone.start()
+    synth.sync()
     let randomKey = Math.round(Math.random()*11)
     displayNote.innerText = key[randomKey][0]
     synth.triggerAttackRelease(key[randomKey][Math.round(Math.random()*6)], '4n', now)
@@ -97,12 +102,16 @@ const playElephantEar = async () => {
     synth.triggerAttackRelease(key[randomKey][Math.round(Math.random()*6)], '4n', now+4)
     synth.triggerAttackRelease(key[randomKey][Math.round(Math.random()*6)], '4n', now+5)
     synth.triggerAttackRelease(key[randomKey][Math.round(Math.random()*6)], '4n', now+6)
+    Tone.Transport.start()
+    //Shoutout to Tylus
 }
 
 const playColorSlide = () => {
     let randomColor = Math.round(Math.random()*11)
     document.querySelector('#color-display').style.display = 'none'
     document.querySelector('#scale-colors').style.display = 'block'
+    document.querySelector('.seven').setAttribute('style', `animation-name:slide; background-color:${colors[randomColor]};`)
+    document.querySelector('.six').setAttribute('style', `animation-name:slide; background-color:${colors[randomColor]};`)
     document.querySelector('.five').setAttribute('style', `animation-name:slide; background-color:${colors[randomColor]};`)
     document.querySelector('.four').setAttribute('style', `animation-name:slide; background-color:${colors[randomColor]};`)
     document.querySelector('.three').setAttribute('style', `animation-name:slide; background-color:${colors[randomColor]};`)
