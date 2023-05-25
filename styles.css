@@ -103,8 +103,12 @@ p{
     margin:14px 10px 10px 0;
 }
 
+span{
+    font-style:italic;
+}
+
 #note {
-    margin:14px 10px 20px 15px;
+    margin:5px 10px 20px 15px;
     padding:5px;
     background-color:black;
     opacity:.6;
