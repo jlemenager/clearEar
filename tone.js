@@ -239,7 +239,7 @@ bushbabyEars.addEventListener('click',()=>{
     humanEarsParagraph.style.color = '#AD825D'
     document.querySelector('#play-sound').innerText = 'Play Notes'
     document.querySelector('#play-sound').style.display = 'inline'
-    document.querySelector('#stop-sound').style.display = 'inline'
+    document.querySelector('#stop-sound').style.display = 'none'
     document.querySelector('#color-display').style.display = 'block'
     document.querySelector('#color-display').style.opacity = 0
     reset()
@@ -282,7 +282,7 @@ elephantEars.addEventListener('click', ()=>{
     bushbabyEarsParagraph.style.color = '#AD825D'
     document.querySelector('#play-sound').innerText = 'Play Notes'
     document.querySelector('#play-sound').style.display = 'inline'
-    document.querySelector('#stop-sound').style.display = 'inline'
+    document.querySelector('#stop-sound').style.display = 'none'
     document.querySelector('#color-display').style.display = 'block'
     document.querySelector('#color-display').style.opacity = 0
     reset()
